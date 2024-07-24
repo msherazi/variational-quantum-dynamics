@@ -1,5 +1,7 @@
 # variational-quantum-dynamics
-This is a variational quantum algorithm (VQA) for simulating non-Markovian quantum dynamics in the condensed phase environment. We integrate the [Adam optimization algorithm](https://arxiv.org/pdf/1412.6980) as the classical optimizer for the parameterized quantum circuit in order to minimize a cost function, where the model Hamiltonian is that of a quantum system that is linearly coupled to a harmonic bath. The parameters to be updated are rotation angles, which are first solved for numerically using Runge-Kutta 8, and then subsequently with the VQA. The data contains the appropriate probability amplitudes.
+This is a variational quantum algorithm (VQA) for simulating non-Markovian quantum dynamics in the condensed phase environment. We integrate the [Adam optimization algorithm](https://arxiv.org/pdf/1412.6980) as the classical optimizer for the parameterized quantum circuit in order to minimize a cost function, where the model Hamiltonian is that of a quantum system that is linearly coupled to a harmonic bath. The parameters to be updated are rotation angles, which are first solved for numerically using Runge-Kutta 8, and then  with the VQA, so the two results can be compared to determine the accuracy of the algorithm. The output of the algorithm, when plotted, shows the time-evolution of the wavefunction of the system
+
+### Files Included
 
 The following files are included in this repository:
 
